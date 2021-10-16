@@ -33,6 +33,7 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 
+
 @app.route("/")
 def welcome():
     """List all available api routes."""
@@ -44,8 +45,11 @@ def welcome():
         f"/api/v1.0/nasdaq/Date<br/>"
         f"/api/v1.0/nasdaq/Close<br/>"
         f"/api/v1.0/nasdaq/Volume"
-
+        
     )
+@app.route("/amc")
+def index():
+    return render_template("index.html")
 
 @app.route("/api/v1.0/amc/Date")
 def amc_date():
