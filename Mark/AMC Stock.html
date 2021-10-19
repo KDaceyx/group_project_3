@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AMC Stock Review</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://unpkg.com/simple-statistics@5.0.0/dist/simple-statistics.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>
+      <!-- Header -->
+        <h1>Hello! This an analysis of AMC Theater Stock and it's reaction with the NASDAQ.</h1>
+      <p></p>
+    <!-- Image -->
+    <img src="https://static.wikia.nocookie.net/spongebob/images/4/46/SVG_SpongeBob_SquarePants.svg/revision/latest/scale-to-width-down/195?cb=20181117230211" alt="Spongebob!" />
+    <br>
+    <div class="row">
+     <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <strong>Company Profile</strong>
+         </div>
+        </div>
+        <div class="company">
+         AMC Entertainment Holdings, Inc., through its subsidiaries, involved in the theatrical exhibition business.
+         The company owns, operates, or has interests in theatres. As of March 12, 2021, it operated approximately 
+         1000 theatres and 10,700 screens in the United States and internationally. The company was founded in 1920
+         and is headquartered in Leawood, Kansas.
+        </div>
+      </div>
+    <ul>
+    </li>
+    </ul>
+  <!-- Bold Link -->
+  <strong><a href="https://www.amctheatres.com/">AMC Theater</a></strong>
+  <br>
+
+  <!-- Link with New Tab -->
+  <a href="https://www.google.com" target="_blank">Google Search</a>
+  <br>
+  <ul>
+  </li>
+  </ul>
+  <ul>
+  </li>
+  </ul>
+  <script>
+   
+    window.onload = function () {
+        
+    var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      theme: "light2",
+      title:{
+        text: "Operations Business Day Line Chart Between March 4th - March 19th 2021"
+        },
+      axisY:{
+	     	title: "Volume",
+	    	includeZero: true,
+	    	valueFormatString: "$#0"
+    	},
+      axisX:{
+        title:  "Dates",
+      },
+      data: [{        
+        type: "line",
+        indexLabelFontSize: 16,
+        dataPoints: [
+          { label: "03/04/2021", y: 77822600},
+          { label: "03/05/2021", y: 59734100, indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+          { label: "03/08/2021", y: 114343800},
+          { label: "03/09/2021", y: 150415600},
+          { label: "03/10/2021", y: 261918600},
+          { label: "03/11/2021", y: 83933600},
+          { label: "03/12/2021", y: 111146700, indexLabel: "\u2191 profile date",markerColor: "yellow", markerType: "circle" },
+          { label: "03/15/2021", y: 277713300, indexLabel: "\u2191 highest on March 15th",markerColor: "red", markerType: "triangle" },
+          { label: "03/16/2021", y: 125967600},
+          { label: "03/17/2021", y: 78053600},
+          { label: "03/18/2021", y: 121418000},
+          { label: "03/19/2021", y: 153206000}
+        ]
+      }]
+    });
+    chart.render();
+    
+    }
+    </script>
+    </head>
+    <body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <ul>
+    </li>
+    </ul>
+    <ul>
+    </li>
+    </ul>
+    <div class="row">
+      <div class="col-md-4">
+         <div class="panel panel-primary">
+           <div class="panel-body">
+             <strong>Analytics</strong>
+          </div>
+         </div>
+         <div class="company">
+         </div>
+       </div>
+     <ul>
+     </li>
+     </ul>
+  <!-- Bold Link -->
+  <strong><a href="AMC Closing Price Bar.html">Closing Price</a></strong>
+  <br>
+</body>
+</html>
