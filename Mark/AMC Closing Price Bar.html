@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <div class="row">
+    <div class="col-md-4">
+       <div class="panel panel-primary">
+         <div class="panel-body">
+           <strong>Company Profile</strong>
+        </div>
+       </div>
+       <div class="company">
+        AMC Entertainment Holdings, Inc., through its subsidiaries, involved in the theatrical exhibition business.
+        The company owns, operates, or has interests in theatres. As of March 12, 2021, it operated approximately 
+        1000 theatres and 10,700 screens in the United States and internationally. The company was founded in 1920
+        and is headquartered in Leawood, Kansas.
+       </div>
+     </div>
+   <ul>
+   </li>
+   </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AMC Stock Review</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://unpkg.com/simple-statistics@5.0.0/dist/simple-statistics.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+  <script>
+    window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2",
+    title:{
+      text: "Business Day Closing Price Bar Chart"
+    },
+    axisY:{
+           title: "Closing Price",
+          includeZero: true,
+          valueFormatString: "$#0"
+      },
+    axisX:{
+      title:  "Between May 21st - June 11th 2021"
+    },
+    data: [{        
+      type: "bar",
+      indexLabelFontSize: 16,
+      dataPoints: [
+        { y: 12.08},
+        { y: 13.68, indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+        { y: 16.41},
+        { y: 19.559999},
+        { y: 26.52},
+        { y: 26.120001},
+        { y: 32.040001},
+        { y: 62.549999, indexLabel: "\u2191 highest on June 2nd",markerColor: "red", markerType: "triangle" },
+        { y: 51.34},
+        { y: 47.91},
+        { y: 55.00},
+        { y: 55.05},
+        { y: 49.34},
+        { y: 48.81},
+        { y: 49.94}
+        ]
+      }]
+    });
+    chart.render();
+    
+    }
+    </script>
+    </head>
+    <body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <ul>
+    </li>
+    </ul>
+    <ul>
+    </li>
+    </ul>
+  <!-- Bold Link -->
+  <strong><a href="AMC Stock.html">AMC Stock</a></strong>
+</body>
+</html>

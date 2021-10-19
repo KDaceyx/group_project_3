@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AMC stock</title>
+  <style>
+      span {
+          text-align: center;
+          display: block
+      }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <span>AMC stock behavoir and comparison to NASDAQ</span>
+  <ul>
+  </li>
+  </ul>
+      <div class="tablestuff">
+      <div class="row">
+      <div class="col-md-12">
+          <table class="table table-striped">
+            <thead>
+              <table>
+              <tr>
+                <th>Date</th>
+                <th>Close Price</th>
+                <th>Volume</th>
+                <th>NASDAQ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>05/27/2021</td>
+                <td>26.52</td>
+                <td>705545700</td>
+                <td>13736.28027</td>
+              </tr>             <tr>
+                <th scope="row">2</th>
+                <td>05/28/2021</td>
+                <td>26.12</td>
+                <td>660623600</td>
+                <td>13748.74023</td>
+              </tr>
+              <tr>
+                <th scope="row">3</td>
+                  <td>06/01/2021</td>
+                  <td>32.04</td>
+                  <td>508694600</td>
+                  <td>13736.480469</td>
+                </tr>
+              <tr>
+                <th scope="row">4</td>
+                  <td>06/02/2021</td>
+                  <td>62.55</td>
+                  <td>766462500</td>
+                  <td>13756.330078</td>
+               </tr>
+               <tr>
+                <th scope="row">5</td>
+                <td>06/03/2021</td>
+               <td>51.34</td>
+               <td>598142200</td>
+               <td>13614.509766</td>
+              </tr>
+              <tr>
+                <th scope="row">6</td>
+                <td>06/04/2021</td>
+               <td>47.91</td>
+               <td>337710100</td>
+               <td>13814.490234</td>
+              </tr>
+              <tr>
+                <th scope="row">7</td>
+                <td>06/07/2021</td>
+               <td>55.00</td>
+               <td>349094900</td>
+               <td>13881.719727</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="app.py"></script>
+</body>
+<ul>
+</li>
+</ul>
+<body>
+{
+  type: 'bar',
+  data: {
+      labels: ['05/27/2021', '05/28/2021', '06/01/2021', '06/02/2021', 06/03/2021]
+      datasets: [{
+          labels: 'Volume',
+          data: [705545700, 66023600,508694600, 766462500, 598142200]
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(55, 162 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(55, 162 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+              ],
+              borderWidth: 1
+      }]
+      }
+  },
+  options: {
+      scales: {
+          yAxes: [{
+              ticks: {
+                  beginAtZero: true
+          }
+      }
+  }
+}
+</body>
+
+
+</html>
